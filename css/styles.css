@@ -1,3 +1,208 @@
+* {
+  box-sizing: border-box;
+  letter-spacing: .1rem; }
 
+.background {
+  width: 100vw;
+  height: 200vh;
+  background-color: darkgrey;
+  position: relative;
+  overflow: hidden; }
+
+#greeting {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 3s ease-in; }
+  #greeting img {
+    width: 60%;
+    margin: 0 20% 2vw; }
+  #greeting span {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0rem;
+    color: #C22531;
+    display: inline-block; }
+  #greeting p {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: .8rem; }
+  #greeting a {
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+    font-weight: 100;
+    background-color: #C22531;
+    padding: 10px 15px;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    transition: transform .15s ease-in-out; }
+  #greeting a:hover {
+    transform: translateY(-3px); }
+
+.distant-mountain-range {
+  height: 15vw;
+  width: 125%;
+  position: absolute;
+  bottom: 0;
+  left: -12.5%;
+  display: flex;
+  justify-content: space-between; }
+  .distant-mountain-range img {
+    width: 25vw; }
+
+#mountain {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+
+#figures {
+  width: 20%;
+  position: absolute;
+  bottom: 2.7vw;
+  left: 40%; }
+
+#glove {
+  animation: wave .5s infinite alternate ease-in-out;
+  width: 2vw;
+  position: absolute;
+  bottom: 21vw;
+  left: 53.25%; }
+
+.snow-container {
+  width: 100%;
+  height: 200vh;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 2; }
+
+.snow {
+  background-color: white;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  opacity: 0;
+  animation: fall linear infinite; }
+
+.smoke-container {
+  height: 100%;
+  width: 3%;
+  position: absolute;
+  left: 44.25%;
+  display: flex;
+  flex-direction: column;
+  animation: appear 10s linear, widen 5s infinite alternate ease; }
+  .smoke-container .smoke {
+    width: 100%;
+    height: 100vh;
+    animation: rise 3s infinite linear; }
+
+.couple {
+  background-color: #ffbb00;
+  width: 15.3%;
+  height: 5vw;
+  padding-top: 1vw;
+  position: absolute;
+  bottom: 29vw;
+  left: 38.5%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden; }
+  .couple img {
+    mix-blend-mode: multiply; }
+  .couple .ellis {
+    height: 5vw;
+    transform: translateX(-5vw); }
+  .couple .emily {
+    height: 5vw;
+    transform: translateX(5vw); }
+
+.ellis-animation {
+  animation: ellis 4s ease forwards; }
+
+.emily-animation {
+  animation: emily 4s ease forwards; }
+
+@media (min-width: 767px) {
+  #greeting p {
+    font-size: 1.5rem; } }
+@keyframes wave {
+  0% {
+    transform: rotate(-15deg); }
+  100% {
+    transform: rotate(15deg); } }
+@keyframes fall {
+  0% {
+    opacity: 0;
+    transform: translateY(0); }
+  50% {
+    opacity: 1;
+    transform: translateY(100vh); }
+  100% {
+    opacity: 1;
+    transform: translateY(200vh); } }
+@keyframes rise {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-100%); } }
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes widen {
+  0% {
+    width: 1%; }
+  100% {
+    width: 3%; } }
+@keyframes ellis {
+  0% {
+    transform: translatex(-5vw); }
+  100% {
+    transform: translatex(4.5vw); } }
+@keyframes emily {
+  0% {
+    transform: translatex(5vw); }
+  100% {
+    transform: translatex(-5.4vw); } }
+@keyframes ellis2 {
+  0% {
+    transform: translatex(-5vw); }
+  35% {
+    transform: translatex(4.5vw); }
+  65% {
+    transform: translatex(4.5vw); }
+  100% {
+    transform: translatex(15vw); } }
+@keyframes emily2 {
+  0% {
+    transform: translatex(5vw); }
+  35% {
+    transform: translatex(-5.4vw); }
+  65% {
+    transform: translatex(-5.4vw); }
+  100% {
+    transform: translatex(-15vw); } }
+@keyframes float {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(5vh); } }
 
 /*# sourceMappingURL=styles.css.map */

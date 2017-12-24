@@ -1,0 +1,121 @@
+@keyframes wave {
+  0%{
+    transform: rotate(-15deg);
+  }
+  100%{
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes fall {
+  0%{
+    opacity:0;
+    transform:translateY(0);
+  }
+
+  50%{
+    opacity:1;
+    transform:translateY(100vh);
+  }
+
+  100%{
+    opacity:1;
+    transform:translateY(200vh);
+  }
+}
+
+@keyframes rise {
+  0%{
+    transform: translateY(0);
+  }
+
+  100%{
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes widen {
+  0%{
+    width: 1%;
+  }
+  100%{
+    width:3%;
+  }
+}
+
+@keyframes ellis {
+  0%{
+    transform: translatex(-5vw);
+  }
+
+  100%{
+    transform: translatex(4.5vw);
+  }
+}
+
+@keyframes emily {
+  0%{
+    transform: translatex(5vw);
+  }
+
+  100%{
+    transform: translatex(-5.4vw);
+  }
+}
+
+
+@keyframes ellis2 {
+  0%{
+    transform: translatex(-5vw);
+  }
+
+  35%{
+    transform: translatex(4.5vw);
+  }
+
+  65%{
+    transform: translatex(4.5vw);
+  }
+
+  100%{
+    transform: translatex(15vw);
+  }
+}
+
+@keyframes emily2 {
+  0%{
+    transform: translatex(5vw);
+  }
+
+  35%{
+    transform: translatex(-5.4vw);
+  }
+
+  65%{
+    transform: translatex(-5.4vw);
+  }
+
+  100%{
+    transform: translatex(-15vw);
+  }
+}
+
+@keyframes float {
+  0%{
+    transform: translateY(0);
+  }
+
+  100%{
+    transform: translateY(5vh);
+  }
+}
